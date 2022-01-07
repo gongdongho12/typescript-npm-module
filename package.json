@@ -1,0 +1,46 @@
+{
+  "name": "typescript-npm-module",
+  "version": "1.0.0",
+  "description": "typescript module for npm",
+  "main": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "_moduleAliases": {
+    "@src": "src"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development node dist/index.js",
+    "build": "tsc && tsc-alias",
+    "build:watch": "tsc -w & tsc-alias -w",
+    "clean": "tsc --build --clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gongdongho12/typescript-npm-module.git"
+  },
+  "keywords": [
+    "npm",
+    "typescript"
+  ],
+  "author": "gongdongho12@gmail.com",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/gongdongho12/typescript-npm-module/issues"
+  },
+  "homepage": "https://github.com/gongdongho12/typescript-npm-module#readme",
+  "devDependencies": {
+    "module-alias": "^2.2.2",
+    "tsc-alias": "^1.5.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@types/es6-promise": "^3.3.0"
+  }
+}
