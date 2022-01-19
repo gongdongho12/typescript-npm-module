@@ -2,7 +2,7 @@
   "name": "typescript-npm-module",
   "version": "1.0.0",
   "description": "typescript module for npm",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.js",
   "files": [
